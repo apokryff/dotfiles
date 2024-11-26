@@ -1,4 +1,4 @@
-CHEAT_DIR=~/dotfiles/zsh/plugins/cheat/
+CHEAT_DIR=$ZDOTDIR/plugins/cheat
 
 if [ ! -d "$CHEAT_DIR" ]; then
   echo "Installing cheat.sh..."
