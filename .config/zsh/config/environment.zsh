@@ -6,7 +6,7 @@ export XDG_STATE_HOME="${HOME}/.local/state"
 
 
 export TERM=xterm-256color
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 export SUDO_PROMPT='[] Enter Password: '
 
