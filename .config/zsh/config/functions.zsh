@@ -18,3 +18,13 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+
+
+function paste() {
+            local file=''${1:-/dev/stdin}
+            local link=$(curl -s --data-binary @"$file" https://paste.rs)
+            echo $link
+            wl-copy $link
+}
+

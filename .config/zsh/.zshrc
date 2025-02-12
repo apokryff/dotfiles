@@ -3,6 +3,7 @@ source ${ZDOTDIR}/config/plugins.zsh
 source ${ZDOTDIR}/config/environment.zsh
 source ${ZDOTDIR}/config/alias.zsh
 source ${ZDOTDIR}/config/functions.zsh
+source ${ZDOTDIR}/config/nh.zsh
 
 
 if [[ -f "$ZDOTDIR/.env.zsh" ]]; then
