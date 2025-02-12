@@ -1,0 +1,16 @@
+[[manager.prepend_keymap]]
+on  = "<C-n>"
+run = ['shell -- ripdrag -xabitI "$@" 2>/dev/null & ', '--confirm']
+
+
+[[manager.prepend_keymap]]
+on   = "!"
+run  = 'shell "$SHELL" --block'
+desc = "Open shell with selected files"
+
+
+[[manager.prepend_keymap]]
+on  = "y"
+run = [ 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ]
+
+
